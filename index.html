@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Creature Search</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <p>Search for Creature Name or ID:</p>
+      <section id="search" class="search">
+        <input id="search-input" required>
+        <button id="search-button">Search</button>
+      </section>
+      <section id="card" class="card">
+        <section id="name-and-id" class="name-and-id">
+          <div id="creature-name"></div>
+          <div id="creature-id"></div>
+        </section>
+        <div class="weight-and-height">
+          <div id="weight"></div>
+          <div id="height"></div>
+        </div>
+        <div id="types" class="types"></div>
+      </section>
+      <section id='special' class='card'>
+        <div id='special-name'></div>
+        <div id='special-description'></div>
+      </section>
+      <section id="stats" class="stats">
+        <table>
+          <caption id="caption"></caption>
+          <thead>
+            <tr>
+              <th scope="col">Base</th>
+              <th scope="col">Stats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="hp-text">HP:</th>
+              <td id="hp"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="attack-text">Attack:</th>
+              <td id="attack"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="defense-text">Defense:</th>
+              <td id="defense"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="special-attack-text">Sp. Attack:</th>
+              <td id="special-attack"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="special-defense-text">Sp. Defense:</th>
+              <td id="special-defense"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="speed-text">Speed:</th>
+              <td id="speed"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
